@@ -87,5 +87,6 @@ span {
 .cities {
     gap: 14px;
     margin-top: 28px;
+    font-family: 'Poppins', sans-serif;
 
 }
