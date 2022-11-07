@@ -32,7 +32,7 @@ ul {
 li {
     color: #2E476B;
     letter-spacing: 0.01em;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
 
 }
 
@@ -51,18 +51,47 @@ li {
 }
 
 .button_header {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 6px;
     width: 170px;
     height: 54px;
-    margin-top: 24px;
+    background-color: #FAF8ED;
+    border: 1.4px solid #F66F4D;
+    border-radius: 27px;
+    text-decoration-line: none;
 
+}
+
+.button_header a {
+
+    text-decoration-line: none;
+    color: #F66F4D;
+    width: 80px;
+    height: 16px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.button_header:hover {
+    background-color: #2D3134;
+    border-color: #2D3134;
+}
+
+.button_header:hover a {
+    color: #F66F4D;
 }
 
 .title {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 16px;
-    margin-top: 89px;
+    text-align: center;
+
 }
 
 .h1 {
@@ -72,21 +101,227 @@ li {
     font-size: 56px;
     line-height: 66px;
     font-style: normal;
+    font-family: 'Inter', sans-serif;
+    margin-top: 89px;
 }
 
 span {
-    color: #5B5F62;
-    width: 461px;
-    height: 16px;
+    font-weight: 400;
     font-size: 16px;
     line-height: 16px;
-    font-weight: 400;
+    margin-top: 16px;
+    font-family: 'Inter', sans-serif;
+    color: #5B5F62;
 
 }
 
-.cities {
+.button_container {
+    display: flex;
+    flex-direction: row;
     gap: 14px;
     margin-top: 28px;
-    font-family: 'Poppins', sans-serif;
 
+
+}
+
+.button {
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: #FAF8ED;
+    border: 1px solid #3D3D3D;
+    border-radius: 30px;
+
+}
+
+.button a {
+
+    font-family: 'Poppins';
+    color: #2D3134;
+    line-height: 14px;
+    font-size: 14px;
+    line-height: 14px;
+    text-decoration-line: none;
+}
+
+.button:hover {
+    background-color: #2d3134;
+}
+
+.button:hover a {
+    color: #FFFFFF;
+}
+
+.grid_left {
+    display: grid;
+    gap: 26px 30px;
+    grid-template-columns: 270px 370px;
+    grid-template-rows: 250px;
+}
+
+.grid img {
+    object-fit: cover;
+}
+
+.grid_right {
+    display: grid;
+    grid-template-columns: 170px 270px;
+    gap: 13px 30px;
+}
+
+.grid3 {
+    grid-column: span 2;
+}
+
+.grid {
+    display: flex;
+    gap: 30px;
+    padding: 54px 135px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 135px;
+}
+
+.footer_left {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-top: 42px;
+}
+
+.footer_left img {
+    width: 98px;
+    height: 35px;
+}
+
+.footer_left p {
+    color: #5B5F62;
+    width: 141px;
+    height: 52px;
+    font-weight: 400;
+    font-size: 16px;
+    font-family: 'Inter';
+
+}
+
+.footer_right {
+    display: flex;
+    gap: 113px;
+    margin-top: 47px;
+}
+
+.Resources p {
+    width: 92px;
+    height: 136px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    color: #676A6C;
+}
+
+.Resources h4 {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    width: 91px;
+    height: 18px;
+    color: #2D3134;
+}
+
+
+
+.Resources {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    align-items: center;
+}
+
+.Travellers {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+
+}
+
+.Travellers p {
+    width: 115px;
+    height: 136px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    color: #676A6C;
+}
+
+.Travellers h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #2D3134;
+}
+
+.Company {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.Company p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    width: 89px;
+    height: 136px;
+    color: #676A6C;
+
+}
+
+.Company h4 {
+    width: 82px;
+    height: 18px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #2D3134;
+}
+
+.Get_App {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.Get_App h4 {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 18px;
+    color: #2D3134;
+    width: 71px;
+    height: 18px;
+}
+
+.Get_App p {
+    width: 119px;
+    height: 68px;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 34px;
+    color: #676A6C;
 }
